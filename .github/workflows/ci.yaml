@@ -1,19 +1,20 @@
 name: Build and Test
-
 on:
   push:
     branches:
       - v4
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
-  build-and-test:
-    if: github.repository == 'ke1-dotcom/oc-wiki'
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
-    permissions:
-      contents: write
-      pages: write      # Thêm dòng này
-      id-token: write   # Thêm dòng này
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: official-stockera/quartz-gh-pages-action@v1
