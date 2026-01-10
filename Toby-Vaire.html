@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Toby Vaire</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="Toby Vaire"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Toby Vaire"/><meta name="twitter:description" content="📜 TEMPLATE HỒ SƠ NHÂN VẬT SIÊU CHI TIẾT (50+ mục lớn, 500+ mục nhỏ) I. Shera. 1. Thông tin cơ bản. 1.1. Họ tên đầy đủ: Rubra Shera 1.2."/><meta property="og:description" content="📜 TEMPLATE HỒ SƠ NHÂN VẬT SIÊU CHI TIẾT (50+ mục lớn, 500+ mục nhỏ) I. Shera. 1. Thông tin cơ bản. 1.1. Họ tên đầy đủ: Rubra Shera 1.2."/><meta property="og:image:alt" content="📜 TEMPLATE HỒ SƠ NHÂN VẬT SIÊU CHI TIẾT (50+ mục lớn, 500+ mục nhỏ) I. Shera. 1. Thông tin cơ bản. 1.1. Họ tên đầy đủ: Rubra Shera 1.2."/><meta property="twitter:domain" content="ke1-dotcom.github.io/oc-wiki"/><meta property="og:url" content="https://ke1-dotcom.github.io/oc-wiki/Toby-Vaire"/><meta property="twitter:url" content="https://ke1-dotcom.github.io/oc-wiki/Toby-Vaire"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="📜 TEMPLATE HỒ SƠ NHÂN VẬT SIÊU CHI TIẾT (50+ mục lớn, 500+ mục nhỏ) I. Shera. 1. Thông tin cơ bản. 1.1. Họ tên đầy đủ: Rubra Shera 1.2."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvb2Mtd2lraS9vYy13aWtpL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://ke1-dotcom.github.io/oc-wiki/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://ke1-dotcom.github.io/oc-wiki/Toby-Vaire-og-image.webp"/><meta property="og:image:url" content="https://ke1-dotcom.github.io/oc-wiki/Toby-Vaire-og-image.webp"/><meta name="twitter:image" content="https://ke1-dotcom.github.io/oc-wiki/Toby-Vaire-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Toby-Vaire"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-38"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-38" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Toby Vaire</a></div></nav><h1 class="article-title">Toby Vaire</h1><p show-comma="true" class="content-meta"><time datetime="2026-01-09T11:48:55.000Z">Jan 09, 2026</time><span>21 min read</span></p></div></div><article class="popover-hint"><p><strong>📜</strong> <strong>TEMPLATE HỒ SƠ NHÂN VẬT SIÊU CHI TIẾT</strong></p>
+<p><em>(50+ mục lớn, 500+ mục nhỏ)</em></p>
+<hr/>
+<p>I. Shera.
+<strong>1. Thông tin cơ bản</strong>.
+1.1. Họ tên đầy đủ: Rubra Shera
+1.2. Tên gọi khác / biệt danh: Veoura
+1.3. Ý nghĩa tên: Màu đỏ dũng mãnh, quý phái.</p>
+<ul>
+<li>Rubra: Trong tiếng Latinh, <em>“rubra”</em> có nghĩa là <strong>màu đỏ, đỏ tươi</strong>. Đây là dạng tính từ giống cái của <em>“ruber”</em>.Màu đỏ thường tượng trưng cho <strong>sức mạnh, tình yêu, đam mê, năng lượng và sự sống</strong>.</li>
+<li>Shera: Được dùng như tên riêng nữ tính, gợi sự <strong>quý phái, dịu dàng</strong>.</li>
+<li>Veoura: Có thể liên tưởng đến <em>“ánh sáng thật sự”</em> hoặc <em>“tầm nhìn”</em> → tạo chiều sâu, khiến khán giả tò mò. Không gắn quá chặt với một nền văn hóa cụ thể → linh hoạt, dễ phát triển thành thương hiệu cá nhân quốc tế. Mang vibe <strong>mộng mị – hiện đại – cuốn hút</strong>, hơi giống những cái tên độc quyền trong âm nhạc/ thời trang/ nghệ thuật.
+1.4. Ngày sinh: 23/12
+<span class="text-highlight">1.5. Nơi sinh: ??</span>
+1.6. Tuổi hiện tại: 16
+1.7. Giới tính: Nữ
+<span class="text-highlight">1.8. Quốc tịch: ??</span>
+1.9. Dân tộc: Florida White rabbit (Oryctolagus cuniculus domesticus)
+1.10. Tôn giáo / tín ngưỡng: bất khả tri (agnostic) (Biết có thần nhưng không thờ phụng, nhưng vẫn buộc miệng gọi)
+<span class="text-highlight">1.11. Ngôn ngữ chính: ??</span>
+<span class="text-highlight">1.12. Ngôn ngữ phụ: ??</span>
+1.13. Cung hoàng đạo (nếu có): Ma kết
+1.14. Nhóm máu: A Rh(D) âm
+1.15. Tình trạng hôn nhân: chưa có
+1.16. Nghề nghiệp hiện tại: Models (Top model)
+1.17. Nghề nghiệp trước đây: chạy vặt (gần như gì cũng làm nếu nó có tiền)
+1.18. Vai trò trong câu chuyện: nhân vật chính (top)
+<strong>2. Ngoại hình tổng thể</strong>
+2.1. Chiều cao: 1m67
+2.2. Cân nặng: 50,2 kg
+2.3. Dáng người (cơ bắp, mảnh khảnh, trung bình, béo, v.v.): mảnh khảnh, loại quả lê
+2.4. Màu da: trắng, một chút thiếu sức sống nhưng cũng hồng nhạt (do bị bạch tạng)
+2.5. Tông da (ấm, lạnh, trung tính): lạnh
+2.6. Đặc điểm nhận dạng nổi bật: tai thỏ trắng hồng, đôi mắt đỏ cùng phong thái rất nhẹ nhàng
+2.7. Dị tật / sẹo / hình xăm: Bạch tạng
+2.8. Thói quen ăn mặc: rất fashion, lâu lâu thay đổi theo kiểu đồ thường nhật, màu sắc chủ đạo là hồng, đỏ, xanh dương
+2.9. Mùi hương thường có: “Rosé Sangreal” có khả năng đề cập đến một loại rượu vang hồng hoặc là một cách chơi chữ liên quan đến rượu vang hồng, thay vì một tên thương hiệu hoặc loại rượu vang cụ thể. &lt;Cụm từ “Sangreal” có thể gợi liên tưởng đến Thánh Tích Sangreal (Chén Thánh)>, và “Rosé Sangreal” có thể là một cách diễn đạt mang tính thơ ca hoặc hình ảnh để chỉ một loại rượu vang hồng đặc biệt ngon, “tuyệt hảo” hoặc có “giá trị như thánh tích”.
+2.10. Ấn tượng đầu tiên khi người khác nhìn: Nhỏ con, cuốn hút, xinh đẹp, thiên thần, thân thiện, nhẹ nhàng, yêu kiều, duyên dáng</li>
+</ul>
+<hr/>
+<p><strong>3. Khuôn mặt</strong></p>
+<p>3.1. Hình dáng khuôn mặt (trái xoan, vuông, dài, tròn): tròn
+3.2. Trán (cao, thấp, rộng, hẹp): không quá cao cũng không quá thấp
+3.3. Lông mày (dày, mỏng, ngang, cong): lông mày sâu róm, màu trắng
+3.4. Mắt</p>
+<ul>
+<li>3.4.1. Màu mắt: đỏ (có chút như máu)</li>
+<li>3.4.2. Kích thước mắt: to tròn, dễ thương</li>
+<li>3.4.3. Hình dáng mắt: tròn tròn</li>
+<li>3.4.4. Tầm nhìn (cận, viễn, loạn): hơi cận nhẹ</li>
+<li>3.4.5. Thói quen (liếc, nhìn thẳng, chớp mắt nhiều): có Kei ở gần là hay liếc qua nhìn, đem ánh mắt ngây thơ đánh giá người khác (trừ Kei vì nhỏ biết rõ từng sợ lông cmn r)
+3.5. Mũi (cao, thấp, tẹt, gồ): cao
+3.6. Miệng (mỏng, dày, hay mím, hay cười): môi dày phần bên dưới, hay nở nụ cười vù đủ gần vừa đủ xa cách, nói chung là cười xã giao. Còn cười thật lòng là khi có Kei
+3.7. Răng (đều, khấp khểnh, trắng, vàng): Đều, trắng
+3.8. Má (có lúm đồng tiền, cao, hóp): Má kiểu có phần phúng phính dễ thương
+3.9. Cằm (nhọn, tròn, vuông): tròn
+3.10. Biểu cảm thường thấy: cười xã giao</li>
+</ul>
+<hr/>
+<p><strong>4. Tóc</strong></p>
+<p>4.1. Màu tóc tự nhiên: trắng, hồng điểm nhẹ 1 chút
+4.2. Màu tóc hiện tại : trắng, hồng điểm nhẹ 1 chút
+4.3. Độ dài tóc: dài qua đến mông
+4.4. Kiểu tóc: mái bằng, xoăn sóng nhẹ
+4.5. Độ dày tóc: nhiều, dày
+4.6. Chất tóc (mượt, xoăn, khô, cứng): xoăn, mượt
+4.7. Thói quen chăm sóc tóc: gội đầu cách 1 ngày, dưỡng tóc mỗi ngày, thường chải chuốc (Kei giúp), nói chung phần còn lại là do gen di chuyền từ mẹ</p>
+<hr/>
+<p><strong>5. Thân thể</strong></p>
+<p>5.1. Tay (to, nhỏ, gân guốc, mềm): nhỏ, mềm
+5.2. Móng tay (dài, cắn ngắn, chăm sóc kỹ): ngắn, thirng thoảng gắn móng theo yêu cầu công việc, móng được chăm sóc kĩ
+5.3. Vai (rộng, hẹp, xuôi): vai nhỏ nhắn
+5.4. Lưng (thẳng, gù, cong): thẳng
+5.5. Chân (dài, ngắn, cơ bắp, gầy): chân dài, đùi có chút to
+5.6. Bàn chân (to, nhỏ, gọn): nhỏ gọn, trắng nõn
+5.7. Giọng nói:</p>
+<ul>
+<li>5.7.1. Âm sắc (trầm, cao, khàn, trong)</li>
+<li>5.7.2. Tốc độ nói (chậm, nhanh, vừa)</li>
+<li>5.7.3. Thói quen nói (ngắt quãng, lặp từ, ấp úng)</li>
+<li>5.7.4. Ngôn ngữ cơ thể khi nói</li>
+</ul>
+<hr/>
+<p><strong>6. Thói quen &amp; phong cách</strong></p>
+<p>6.1. Cách ăn mặc thường ngày<br/>
+6.2. Trang sức thường dùng<br/>
+6.3. Thói quen ăn uống<br/>
+6.4. Thói quen ngủ nghỉ<br/>
+6.5. Cử chỉ đặc trưng<br/>
+6.6. Thói quen khi căng thẳng<br/>
+6.7. Tư thế đi đứng<br/>
+6.8. Thói quen vệ sinh cá nhân</p>
+<hr/>
+<p><strong>7. Tính cách chung</strong></p>
+<p>7.1. Hướng nội / hướng ngoại / trung dung<br/>
+7.2. Tính khí (dễ nổi nóng, kiên nhẫn, điềm đạm)<br/>
+7.3. Mức độ tự tin<br/>
+7.4. Sự tò mò<br/>
+7.5. Sự trung thực<br/>
+7.6. Sự đồng cảm<br/>
+7.7. Lòng dũng cảm<br/>
+7.8. Khiếu hài hước<br/>
+7.9. Thói quen nói dối?<br/>
+7.10. Niềm tin cốt lõi</p>
+<hr/>
+<p><strong>8. Sở thích &amp; thói quen</strong></p>
+<p>8.1. Món ăn yêu thích<br/>
+8.2. Đồ uống yêu thích<br/>
+8.3. Màu sắc ưa thích<br/>
+8.4. Âm nhạc ưa thích<br/>
+8.5. Loại phim / sách ưa thích<br/>
+8.6. Thú cưng yêu thích<br/>
+8.7. Hoạt động giải trí<br/>
+8.8. Thói quen xấu<br/>
+8.9. Nghiện (cà phê, thuốc lá, rượu, cờ bạc…)<br/>
+8.10. Thú vui kỳ lạ</p>
+<hr/>
+<p><strong>9. Kỹ năng &amp; tài năng</strong></p>
+<p>9.1. Kỹ năng chiến đấu (nếu có)<br/>
+9.2. Kỹ năng sinh tồn<br/>
+9.3. Kỹ năng xã hội<br/>
+9.4. Kỹ năng nghề nghiệp<br/>
+9.5. Kỹ năng học thuật<br/>
+9.6. Năng khiếu nghệ thuật<br/>
+9.7. Kỹ năng ngôn ngữ<br/>
+9.8. Thể thao<br/>
+9.9. Khả năng lãnh đạo<br/>
+9.10. Điểm yếu kỹ năng</p>
+<hr/>
+<p><strong>10. Học vấn</strong></p>
+<p>10.1. Trình độ học vấn<br/>
+10.2. Trường học đã theo học<br/>
+10.3. Môn học yêu thích<br/>
+10.4. Môn học yếu kém<br/>
+10.5. Giáo viên / người ảnh hưởng lớn<br/>
+10.6. Thành tích học tập<br/>
+10.7. Thói quen học tập<br/>
+10.8. Thái độ với việc học</p>
+<hr/>
+<p><strong>11. Gia đình</strong></p>
+<p>11.1. Cha<br/>
+11.2. Mẹ<br/>
+11.3. Anh chị em<br/>
+11.4. Gia đình mở rộng (ông bà, họ hàng)<br/>
+11.5. Mối quan hệ với từng thành viên<br/>
+11.6. Tình trạng gia đình (còn sống, mất, ly hôn)<br/>
+11.7. Ảnh hưởng của gia đình đến nhân vật</p>
+<hr/>
+<p><strong>12. Bạn bè &amp; xã hội</strong></p>
+<p>12.1. Bạn thân nhất<br/>
+12.2. Bạn quen xã giao<br/>
+12.3. Đồng nghiệp<br/>
+12.4. Đối thủ / kẻ thù<br/>
+12.5. Người ngưỡng mộ<br/>
+12.6. Người mà nhân vật ngưỡng mộ<br/>
+12.7. Tầm ảnh hưởng xã hội<br/>
+12.8. Thái độ với cộng đồng</p>
+<hr/>
+<p><strong>13. Tình cảm &amp; quan hệ</strong></p>
+<p>13.1. Người yêu hiện tại<br/>
+13.2. Người yêu cũ<br/>
+13.3. Mối tình đầu<br/>
+13.4. Thái độ với tình yêu<br/>
+13.5. Xu hướng tình cảm<br/>
+13.6. Thói quen trong tình yêu<br/>
+13.7. Mức độ ghen tuông<br/>
+13.8. Trải nghiệm tình dục (nếu cần cho nhân vật)</p>
+<hr/>
+<p><strong>14. Tâm lý &amp; nội tâm</strong></p>
+<p>14.1. Nỗi sợ lớn nhất<br/>
+14.2. Ám ảnh tuổi thơ<br/>
+14.3. Mức độ lo âu<br/>
+14.4. Mức độ trầm cảm (nếu có)<br/>
+14.5. Cách đối diện với stress<br/>
+14.6. Giá trị tinh thần<br/>
+14.7. Triết lý sống<br/>
+14.8. Ước mơ sâu thẳm<br/>
+14.9. Mức độ ích kỷ / vị tha<br/>
+14.10. Tính sở hữu</p>
+<hr/>
+<p><strong>15. Bối cảnh cá nhân</strong></p>
+<p>15.1. Tuổi thơ<br/>
+15.2. Trải nghiệm quan trọng<br/>
+15.3. Sự kiện thay đổi cuộc đời<br/>
+15.4. Tai nạn / bệnh tật trong quá khứ<br/>
+15.5. Thành công lớn nhất<br/>
+15.6. Thất bại lớn nhất<br/>
+15.7. Bài học quan trọng nhất<br/>
+15.8. Người có ảnh hưởng mạnh nhất</p>
+<hr/>
+<p><strong>16. Bối cảnh xã hội &amp; lịch sử</strong></p>
+<p>16.1. Thời đại đang sống<br/>
+16.2. Bối cảnh chính trị<br/>
+16.3. Bối cảnh kinh tế<br/>
+16.4. Bối cảnh văn hóa<br/>
+16.5. Sự kiện lịch sử nhân vật chứng kiến<br/>
+16.6. Vị trí của nhân vật trong xã hội<br/>
+16.7. Địa vị / giai cấp<br/>
+16.8. Mối quan hệ với luật pháp</p>
+<hr/>
+<p><strong>17. Sức khỏe</strong></p>
+<p>17.1. Thể trạng chung<br/>
+17.2. Bệnh tật thường gặp<br/>
+17.3. Dị ứng<br/>
+17.4. Chấn thương cũ<br/>
+17.5. Sức khỏe tinh thần<br/>
+17.6. Thói quen rèn luyện<br/>
+17.7. Chế độ ăn uống<br/>
+17.8. Mức độ bền bỉ</p>
+<hr/>
+<p><strong>18. Thế giới quan &amp; niềm tin</strong></p>
+<p>18.1. Quan điểm về đạo đức<br/>
+18.2. Quan điểm về công lý<br/>
+18.3. Quan điểm về cái chết<br/>
+18.4. Quan điểm về gia đình<br/>
+18.5. Quan điểm về bạn bè<br/>
+18.6. Quan điểm về tình yêu<br/>
+18.7. Quan điểm về xã hội<br/>
+18.8. Quan điểm về tôn giáo<br/>
+18.9. Quan điểm về chính trị<br/>
+18.10. Quan điểm về tiền bạc</p>
+<hr/>
+<p><strong>19. Thói quen hàng ngày</strong></p>
+<p>19.1. Giờ thức dậy<br/>
+19.2. Giờ đi ngủ<br/>
+19.3. Thói quen ăn sáng<br/>
+19.4. Lịch trình thường ngày<br/>
+19.5. Thói quen trước khi ngủ<br/>
+19.6. Thói quen khi rảnh rỗi<br/>
+19.7. Thói quen khi ốm đau<br/>
+19.8. Thói quen di chuyển</p>
+<hr/>
+<p><strong>20. Điểm mạnh &amp; điểm yếu</strong></p>
+<p>20.1. Điểm mạnh về thể chất<br/>
+20.2. Điểm mạnh về tinh thần<br/>
+20.3. Điểm mạnh về kỹ năng<br/>
+20.4. Điểm yếu về thể chất<br/>
+20.5. Điểm yếu về tinh thần<br/>
+20.6. Điểm yếu về xã hội<br/>
+20.7. Điểm yếu trong tình cảm</p>
+<p><strong>21. Tài chính &amp; Kinh tế cá nhân</strong></p>
+<p>21.1. Thu nhập hàng tháng<br/>
+21.2. Nguồn thu nhập chính<br/>
+21.3. Nguồn thu nhập phụ<br/>
+21.4. Thói quen chi tiêu<br/>
+21.5. Mức độ tiết kiệm<br/>
+21.6. Thái độ với tiền bạc<br/>
+21.7. Nợ nần (nếu có)<br/>
+21.8. Tài sản (nhà, đất, xe, v.v.)<br/>
+21.9. Mức độ xa xỉ / giản dị<br/>
+21.10. Kỹ năng quản lý tài chính</p>
+<hr/>
+<p><strong>22. Nghề nghiệp &amp; sự nghiệp</strong></p>
+<p>22.1. Công việc hiện tại<br/>
+22.2. Chức vụ<br/>
+22.3. Lương bổng<br/>
+22.4. Công việc đầu tiên trong đời<br/>
+22.5. Con đường sự nghiệp<br/>
+22.6. Thành tựu nổi bật<br/>
+22.7. Thất bại nghề nghiệp<br/>
+22.8. Thái độ với công việc<br/>
+22.9. Đồng nghiệp quan trọng<br/>
+22.10. Mục tiêu sự nghiệp</p>
+<hr/>
+<p><strong>23. Hành vi trong xã hội</strong></p>
+<p>23.1. Cách cư xử nơi công cộng<br/>
+23.2. Cách ứng xử trong gia đình<br/>
+23.3. Ứng xử với người lạ<br/>
+23.4. Ứng xử với cấp trên<br/>
+23.5. Ứng xử với cấp dưới<br/>
+23.6. Ứng xử trong môi trường căng thẳng<br/>
+23.7. Ứng xử khi có quyền lực<br/>
+23.8. Ứng xử khi mất quyền lực<br/>
+23.9. Ứng xử khi bị sỉ nhục<br/>
+23.10. Ứng xử khi được khen ngợi</p>
+<hr/>
+<p><strong>24. Thói quen khi chịu áp lực</strong></p>
+<p>24.1. Phản ứng nhanh hay chậm<br/>
+24.2. Dấu hiệu căng thẳng (run, toát mồ hôi, im lặng)<br/>
+24.3. Thói quen giảm stress<br/>
+24.4. Phản ứng khi bị ép buộc<br/>
+24.5. Phản ứng khi bị phản bội<br/>
+24.6. Phản ứng khi bị mất mát<br/>
+24.7. Phản ứng khi bị đe dọa tính mạng<br/>
+24.8. Phản ứng khi phải đưa quyết định lớn<br/>
+24.9. Phản ứng với thất bại<br/>
+24.10. Phản ứng với thành công bất ngờ</p>
+<hr/>
+<p><strong>25. Khả năng lãnh đạo &amp; làm việc nhóm</strong></p>
+<p>25.1. Vai trò thường đảm nhận trong nhóm<br/>
+25.2. Khả năng chỉ huy<br/>
+25.3. Khả năng hợp tác<br/>
+25.4. Khả năng truyền cảm hứng<br/>
+25.5. Thái độ với cấp dưới<br/>
+25.6. Khả năng chịu trách nhiệm<br/>
+25.7. Mức độ tham vọng<br/>
+25.8. Khả năng giải quyết xung đột<br/>
+25.9. Kỹ năng đàm phán<br/>
+25.10. Thái độ với quyền lực</p>
+<hr/>
+<p><strong>26. Bí mật &amp; sự thật ẩn giấu</strong></p>
+<p>26.1. Bí mật tuổi thơ<br/>
+26.2. Bí mật gia đình<br/>
+26.3. Bí mật nghề nghiệp<br/>
+26.4. Bí mật tình cảm<br/>
+26.5. Bí mật với xã hội<br/>
+26.6. Bí mật với bạn bè<br/>
+26.7. Bí mật với người yêu<br/>
+26.8. Bí mật chỉ một mình biết<br/>
+26.9. Điều hối hận nhất<br/>
+26.10. Điều chưa từng thổ lộ</p>
+<hr/>
+<p><strong>27. Kỷ niệm quan trọng</strong></p>
+<p>27.1. Kỷ niệm hạnh phúc nhất<br/>
+27.2. Kỷ niệm buồn nhất<br/>
+27.3. Kỷ niệm đau đớn nhất<br/>
+27.4. Kỷ niệm đáng xấu hổ<br/>
+27.5. Kỷ niệm về gia đình<br/>
+27.6. Kỷ niệm về tình bạn<br/>
+27.7. Kỷ niệm tình yêu<br/>
+27.8. Kỷ niệm nghề nghiệp<br/>
+27.9. Kỷ niệm thay đổi nhân sinh quan<br/>
+27.10. Kỷ niệm bị chôn giấu</p>
+<hr/>
+<p><strong>28. Biểu tượng cá nhân</strong></p>
+<p>28.1. Vật may mắn<br/>
+28.2. Biểu tượng đại diện<br/>
+28.3. Số may mắn<br/>
+28.4. Bài hát đại diện<br/>
+28.5. Câu nói cửa miệng<br/>
+28.6. Trang phục đặc trưng<br/>
+28.7. Vật dụng luôn mang theo<br/>
+28.8. Hình xăm / dấu ấn cá nhân<br/>
+28.9. Biểu tượng gia tộc / dòng dõi<br/>
+28.10. Biểu tượng nghề nghiệp</p>
+<hr/>
+<p><strong>29. Sở thích ẩn giấu</strong></p>
+<p>29.1. Sở thích kỳ quặc<br/>
+29.2. Sở thích nguy hiểm<br/>
+29.3. Sở thích bí mật với gia đình<br/>
+29.4. Sở thích bí mật với xã hội<br/>
+29.5. Thói quen tự an ủi bản thân<br/>
+29.6. Thú sưu tầm đặc biệt<br/>
+29.7. Sở thích không ai ngờ<br/>
+29.8. Sở thích bị che giấu do xấu hổ<br/>
+29.9. Sở thích bị người khác coi thường<br/>
+29.10. Sở thích trái ngược tính cách</p>
+<hr/>
+<p><strong>30. Hành vi đạo đức &amp; pháp luật</strong></p>
+<p>30.1. Tuân thủ pháp luật hay không<br/>
+30.2. Quan điểm về công lý<br/>
+30.3. Từng phạm pháp chưa<br/>
+30.4. Thái độ khi thấy tội ác<br/>
+30.5. Thái độ với luật lệ hà khắc<br/>
+30.6. Từng hối lộ hay nhận hối lộ chưa<br/>
+30.7. Từng lừa dối lớn chưa<br/>
+30.8. Quan điểm về đạo đức xã hội<br/>
+30.9. Quan điểm về luật rừng<br/>
+30.10. Quan điểm về tự do cá nhân</p>
+<hr/>
+<p><strong>31. Tri thức &amp; học vấn phi chính thức</strong></p>
+<p>31.1. Kiến thức tự học<br/>
+31.2. Kinh nghiệm sống<br/>
+31.3. Kiến thức dân gian<br/>
+31.4. Kiến thức nghề thủ công<br/>
+31.5. Kiến thức quân sự<br/>
+31.6. Kiến thức tâm lý<br/>
+31.7. Kiến thức văn hóa vùng miền<br/>
+31.8. Kiến thức lịch sử<br/>
+31.9. Kiến thức khoa học<br/>
+31.10. Kiến thức triết học</p>
+<hr/>
+<p><strong>32. Công nghệ &amp; kỹ năng hiện đại</strong></p>
+<p>32.1. Sử dụng máy tính<br/>
+32.2. Sử dụng điện thoại<br/>
+32.3. Kỹ năng mạng xã hội<br/>
+32.4. Kỹ năng lập trình<br/>
+32.5. Kỹ năng hack / an ninh mạng<br/>
+32.6. Sử dụng công nghệ quân sự<br/>
+32.7. Sử dụng công nghệ y tế<br/>
+32.8. Sử dụng công nghệ gia dụng<br/>
+32.9. Thái độ với công nghệ<br/>
+32.10. Nghiện công nghệ?</p>
+<hr/>
+<p><strong>33. Phương tiện di chuyển</strong></p>
+<p>33.1. Có bằng lái xe không<br/>
+33.2. Loại xe sử dụng thường xuyên<br/>
+33.3. Thói quen lái xe<br/>
+33.4. Kỹ năng lái xe<br/>
+33.5. Phương tiện công cộng yêu thích<br/>
+33.6. Thói quen du lịch<br/>
+33.7. Khả năng định hướng<br/>
+33.8. Có sợ đi xa không<br/>
+33.9. Trải nghiệm du hành đáng nhớ<br/>
+33.10. Thái độ với việc bay / tàu biển</p>
+<hr/>
+<p><strong>34. Thức ăn &amp; ẩm thực</strong></p>
+<p>34.1. Món ăn yêu thích<br/>
+34.2. Món ghét nhất<br/>
+34.3. Thói quen ăn uống<br/>
+34.4. Ăn chay hay mặn<br/>
+34.5. Dị ứng thực phẩm<br/>
+34.6. Thói quen uống rượu<br/>
+34.7. Thói quen uống cà phê / trà<br/>
+34.8. Khả năng nấu ăn<br/>
+34.9. Món đặc sản quê hương<br/>
+34.10. Thái độ với ẩm thực lạ</p>
+<hr/>
+<p><strong>35. Nhà cửa &amp; môi trường sống</strong></p>
+<p>35.1. Loại nhà ở<br/>
+35.2. Nội thất cơ bản<br/>
+35.3. Phòng riêng có gì đặc biệt<br/>
+35.4. Phong cách trang trí<br/>
+35.5. Mức độ gọn gàng<br/>
+35.6. Địa điểm sống ưa thích<br/>
+35.7. Có nuôi thú cưng không<br/>
+35.8. Thói quen dọn dẹp<br/>
+35.9. An ninh nơi ở<br/>
+35.10. Nhà cửa tượng trưng cho điều gì</p>
+<hr/>
+<p><strong>36. Thời gian &amp; lịch sử cá nhân (timeline)</strong></p>
+<p>36.1. 0–5 tuổi: kỷ niệm chính<br/>
+36.2. 6–10 tuổi<br/>
+36.3. 11–15 tuổi<br/>
+36.4. 16–20 tuổi<br/>
+36.5. 21–30 tuổi<br/>
+36.6. 31–40 tuổi<br/>
+36.7. 41–50 tuổi<br/>
+36.8. 51–60 tuổi<br/>
+36.9. 61+ tuổi<br/>
+36.10. Các bước ngoặt đời</p>
+<hr/>
+<p><strong>37. Thế giới quan chính trị</strong></p>
+<p>37.1. Quan điểm về dân chủ<br/>
+37.2. Quan điểm về độc tài<br/>
+37.3. Quan điểm về tự do ngôn luận<br/>
+37.4. Quan điểm về chiến tranh<br/>
+37.5. Quan điểm về hòa bình<br/>
+37.6. Quan điểm về quyền lực<br/>
+37.7. Quan điểm về dân quyền<br/>
+37.8. Quan điểm về công bằng xã hội<br/>
+37.9. Quan điểm về môi trường<br/>
+37.10. Quan điểm về di cư</p>
+<hr/>
+<p><strong>38. Thế giới quan siêu hình &amp; tâm linh</strong></p>
+<p>38.1. Niềm tin vào Thần / Chúa / Phật<br/>
+38.2. Niềm tin vào linh hồn<br/>
+38.3. Niềm tin vào luân hồi<br/>
+38.4. Niềm tin vào số mệnh<br/>
+38.5. Niềm tin vào ma quỷ<br/>
+38.6. Niềm tin vào phép thuật<br/>
+38.7. Niềm tin vào khoa học thuần túy<br/>
+38.8. Niềm tin vào biểu tượng tâm linh<br/>
+38.9. Nghi lễ từng tham gia<br/>
+38.10. Từng trải qua hiện tượng siêu nhiên</p>
+<hr/>
+<p><strong>39. Thái độ với tự nhiên</strong></p>
+<p>39.1. Thái độ với động vật<br/>
+39.2. Thái độ với thực vật<br/>
+39.3. Thái độ với biển cả<br/>
+39.4. Thái độ với núi rừng<br/>
+39.5. Thái độ với thời tiết khắc nghiệt<br/>
+39.6. Thái độ với biến đổi khí hậu<br/>
+39.7. Khả năng sống sót ngoài tự nhiên<br/>
+39.8. Kỷ niệm đáng nhớ với thiên nhiên<br/>
+39.9. Có thích cắm trại không<br/>
+39.10. Có thích đi bộ đường dài không</p>
+<hr/>
+<p><strong>40. Phong cách giao tiếp</strong></p>
+<p>40.1. Ngôn ngữ cơ thể<br/>
+40.2. Âm lượng giọng nói<br/>
+40.3. Tốc độ nói<br/>
+40.4. Giọng điệu thường dùng<br/>
+40.5. Cách viết<br/>
+40.6. Cách nhắn tin<br/>
+40.7. Khả năng thuyết trình<br/>
+40.8. Khả năng tranh luận<br/>
+40.9. Khả năng thuyết phục<br/>
+40.10. Khả năng kể chuyện</p>
+<p><strong>41. Thời trang &amp; phong cách cá nhân</strong></p>
+<p>41.1. Gu ăn mặc thường ngày<br/>
+41.2. Trang phục khi đi làm<br/>
+41.3. Trang phục khi đi tiệc<br/>
+41.4. Trang phục khi ở nhà<br/>
+41.5. Trang phục khi tập thể thao<br/>
+41.6. Trang phục khi đi ngủ<br/>
+41.7. Thói quen thay đổi phong cách theo mùa<br/>
+41.8. Thương hiệu yêu thích<br/>
+41.9. Phong cách chịu ảnh hưởng từ ai<br/>
+41.10. Thái độ với quần áo sang trọng<br/>
+41.11. Thái độ với quần áo bình dân<br/>
+41.12. Thói quen mua sắm<br/>
+41.13. Có thích quần áo second-hand không<br/>
+41.14. Trang phục biểu tượng của nhân vật<br/>
+41.15. Phụ kiện đi kèm (đồng hồ, nhẫn, dây chuyền…)</p>
+<hr/>
+<p><strong>42. Thói quen du lịch &amp; khám phá</strong></p>
+<p>42.1. Địa điểm du lịch yêu thích<br/>
+42.2. Địa điểm ghét nhất<br/>
+42.3. Thói quen chuẩn bị hành lý<br/>
+42.4. Có thích đi du lịch một mình không<br/>
+42.5. Có thích đi theo đoàn không<br/>
+42.6. Loại du lịch ưa thích (biển, núi, thành phố, văn hóa)<br/>
+42.7. Có từng đi du lịch nước ngoài chưa<br/>
+42.8. Có sợ máy bay không<br/>
+42.9. Có từng đi phượt chưa<br/>
+42.10. Thái độ với du lịch xa xỉ<br/>
+42.11. Thái độ với du lịch tiết kiệm<br/>
+42.12. Ngôn ngữ giao tiếp khi đi nước ngoài<br/>
+42.13. Vật bất ly thân khi đi du lịch<br/>
+42.14. Sự cố du lịch đáng nhớ<br/>
+42.15. Người bạn đồng hành ưa thích</p>
+<hr/>
+<p><strong>43. Thói quen công nghệ số &amp; internet</strong></p>
+<p>43.1. Thời gian online trung bình mỗi ngày<br/>
+43.2. Mạng xã hội sử dụng nhiều nhất<br/>
+43.3. Thói quen đăng bài<br/>
+43.4. Nội dung thường xuyên theo dõi<br/>
+43.5. Từng bị “drama” online chưa<br/>
+43.6. Quan điểm về sự riêng tư mạng<br/>
+43.7. Có dùng dark web không<br/>
+43.8. Có chơi game online không<br/>
+43.9. Loại game yêu thích<br/>
+43.10. Thái độ với AI &amp; công nghệ mới<br/>
+43.11. Mức độ nghiện smartphone<br/>
+43.12. Có dùng app hẹn hò không<br/>
+43.13. Có bị hack tài khoản chưa<br/>
+43.14. Có quen bạn thân qua mạng không<br/>
+43.15. Quan điểm về metaverse / thế giới ảo</p>
+<hr/>
+<p><strong>44. Vũ khí &amp; chiến đấu (nếu applicable)</strong></p>
+<p>44.1. Vũ khí ưa thích<br/>
+44.2. Vũ khí ghét nhất<br/>
+44.3. Khả năng cận chiến<br/>
+44.4. Khả năng tầm xa<br/>
+44.5. Khả năng tự vệ tay không<br/>
+44.6. Kỹ thuật chiến đấu đặc biệt<br/>
+44.7. Có từng giết ai chưa<br/>
+44.8. Thái độ với việc giết chóc<br/>
+44.9. Thái độ với thương tích bản thân<br/>
+44.10. Thái độ với thương tích người khác<br/>
+44.11. Khả năng chịu đau<br/>
+44.12. Khả năng bắn súng<br/>
+44.13. Khả năng dùng dao kiếm<br/>
+44.14. Khả năng dùng vũ khí thô sơ<br/>
+44.15. Phản xạ trong chiến đấu</p>
+<hr/>
+<p><strong>45. Y học &amp; chăm sóc sức khỏe</strong></p>
+<p>45.1. Kiến thức y tế cơ bản<br/>
+45.2. Khả năng sơ cứu<br/>
+45.3. Có từng cứu mạng ai chưa<br/>
+45.4. Có từng thất bại khi cứu ai chưa<br/>
+45.5. Thái độ với bác sĩ<br/>
+45.6. Thái độ với bệnh viện<br/>
+45.7. Có sợ máu không<br/>
+45.8. Có sợ kim tiêm không<br/>
+45.9. Thuốc thường dùng<br/>
+45.10. Thói quen tập thể dục<br/>
+45.11. Có tập gym không<br/>
+45.12. Có thiền / yoga không<br/>
+45.13. Có từng bị nghiện thuốc không<br/>
+45.14. Có từng phẫu thuật chưa<br/>
+45.15. Có từng bị bệnh nan y chưa</p>
+<hr/>
+<p><strong>46. Nỗi sợ &amp; ám ảnh</strong></p>
+<p>46.1. Sợ bóng tối?<br/>
+46.2. Sợ độ cao?<br/>
+46.3. Sợ không gian kín?<br/>
+46.4. Sợ đám đông?<br/>
+46.5. Sợ côn trùng?<br/>
+46.6. Sợ động vật lớn?<br/>
+46.7. Sợ máu?<br/>
+46.8. Sợ chết?<br/>
+46.9. Sợ mất người thân?<br/>
+46.10. Sợ mất trí nhớ?<br/>
+46.11. Ám ảnh tuổi thơ<br/>
+46.12. Ám ảnh xã hội<br/>
+46.13. Ám ảnh về thất bại<br/>
+46.14. Ám ảnh về tội lỗi<br/>
+46.15. Ám ảnh về sự phản bội</p>
+<hr/>
+<p><strong>47. Ước mơ &amp; khát vọng</strong></p>
+<p>47.1. Ước mơ thuở nhỏ<br/>
+47.2. Ước mơ hiện tại<br/>
+47.3. Khát vọng ngắn hạn<br/>
+47.4. Khát vọng dài hạn<br/>
+47.5. Ước mơ đã thành hiện thực<br/>
+47.6. Ước mơ bị bỏ dở<br/>
+47.7. Người truyền cảm hứng cho ước mơ<br/>
+47.8. Rào cản lớn nhất để đạt được ước mơ<br/>
+47.9. Mức độ kiên định theo đuổi ước mơ<br/>
+47.10. Thái độ nếu ước mơ thất bại<br/>
+47.11. Có sẵn sàng hy sinh vì ước mơ không<br/>
+47.12. Có từng từ bỏ ước mơ không<br/>
+47.13. Ai đang chống lại ước mơ của nhân vật<br/>
+47.14. Ai đang ủng hộ ước mơ đó<br/>
+47.15. Ước mơ cuối cùng trước khi chết</p>
+<hr/>
+<p><strong>48. Tội lỗi &amp; chuộc lỗi</strong></p>
+<p>48.1. Sai lầm lớn nhất trong đời<br/>
+48.2. Tội lỗi cá nhân không ai biết<br/>
+48.3. Người từng bị nhân vật làm tổn thương<br/>
+48.4. Người từng tha thứ cho nhân vật<br/>
+48.5. Người không bao giờ tha thứ cho nhân vật<br/>
+48.6. Nhân vật có từng phản bội ai không<br/>
+48.7. Nhân vật có từng hối lộ, gian lận không<br/>
+48.8. Có từng hối hận vì không hành động không<br/>
+48.9. Cách chuộc lỗi quen thuộc<br/>
+48.10. Thái độ với sự tha thứ<br/>
+48.11. Thái độ với sự trừng phạt<br/>
+48.12. Từng bị pháp luật trừng trị chưa<br/>
+48.13. Từng tha thứ cho kẻ thù chưa<br/>
+48.14. Từng tìm cách trốn tránh tội lỗi chưa<br/>
+48.15. Có coi mình là kẻ tội lỗi không</p>
+<hr/>
+<p><strong>49. Ảnh hưởng &amp; di sản để lại</strong></p>
+<p>49.1. Tác động đến gia đình<br/>
+49.2. Tác động đến bạn bè<br/>
+49.3. Tác động đến xã hội<br/>
+49.4. Tác động đến kẻ thù<br/>
+49.5. Tác động đến thế hệ sau<br/>
+49.6. Thành tựu để lại<br/>
+49.7. Sai lầm để lại<br/>
+49.8. Danh tiếng hiện tại<br/>
+49.9. Danh tiếng sau khi chết<br/>
+49.10. Di vật để lại<br/>
+49.11. Ai sẽ nhớ đến nhân vật<br/>
+49.12. Ai sẽ ghét nhân vật mãi mãi<br/>
+49.13. Ai sẽ tha thứ sau khi nhân vật mất<br/>
+49.14. Lời trăn trối muốn để lại<br/>
+49.15. Cách nhân vật muốn được nhớ đến</p>
+<hr/>
+<p><strong>50. Phát triển trong câu chuyện (Character Arc)</strong></p>
+<p>50.1. Nhân vật bắt đầu như thế nào<br/>
+50.2. Điểm yếu ban đầu<br/>
+50.3. Mục tiêu ban đầu<br/>
+50.4. Thử thách chính<br/>
+50.5. Người thầy / người dẫn đường<br/>
+50.6. Người phản diện chính ảnh hưởng đến arc<br/>
+50.7. Bước ngoặt lớn<br/>
+50.8. Sai lầm bước ngoặt<br/>
+50.9. Thay đổi niềm tin<br/>
+50.10. Thay đổi mục tiêu<br/>
+50.11. Cái giá phải trả<br/>
+50.12. Bài học lớn nhất<br/>
+50.13. Khoảnh khắc chiến thắng<br/>
+50.14. Khoảnh khắc thất bại<br/>
+50.15. Nhân vật kết thúc ra sao (happy / tragic / open-ended)</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="./MatthewToby" class="internal">MatthewToby</a></li><li><a href="./Ocs" class="internal">Ocs</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>
