@@ -15,7 +15,5 @@ jobs:
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      pages: write      # Thêm dòng này
+      id-token: write   # Thêm dòng này
